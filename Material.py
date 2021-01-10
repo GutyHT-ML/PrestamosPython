@@ -1,4 +1,4 @@
 class Material:
-    nombre = ""
+    Nombre = ""
     def __init__(self, name):
-        self.nombre = name
+        self.Nombre = name

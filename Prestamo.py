@@ -1,9 +1,9 @@
-import App1.Material as m
+from Material import Material as m
 class Prestamo:
     Beneficiado = ""
-    Materiales = list[m]
+    Materiales = [m]
     Fecha = ""
-    def __init__(self, name, date, materials):
+    def __init__(self, name,date, materials = []):
         self.Beneficiado = name
-        self.Materiales = materials
         self.Fecha = date
+        self.Materiales = materials
