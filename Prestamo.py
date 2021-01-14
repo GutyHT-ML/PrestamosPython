@@ -1,9 +1,10 @@
-from Material import Material as m
+from Material import Material
+from Persona import Persona
 class Prestamo:
-    Beneficiado = ""
-    Materiales = [m]
-    Fecha = ""
-    def __init__(self, name,date, materials = []):
-        self.Beneficiado = name
-        self.Fecha = date
-        self.Materiales = materials
+    beneficiado = Persona()
+    materiales = []
+    fecha = ""
+    def __init__(self, name:Persona, date:str, materials:list):
+        self.beneficiado = name
+        self.fecha = date
+        self.materiales = materials
